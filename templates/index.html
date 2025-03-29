@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><title>氏名描画Webアプリ</title></head>
+<body>
+    <h1>氏名描画テスト</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="xmlfile" required>
+        <button type="submit">アップロード</button>
+    </form>
+    {% if image_path %}
+        <h2>結果: {{ name }}</h2>
+        <img src="{{ image_path }}" width="800">
+        <p><a href="{{ image_path }}" download>画像をダウンロード</a></p>
+    {% endif %}
+</body>
+</html>

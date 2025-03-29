@@ -1,0 +1,4 @@
+flask
+bs4
+pdf2image
+Pillow
